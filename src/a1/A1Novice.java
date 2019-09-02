@@ -72,7 +72,7 @@ public class A1Novice {
 				double amtTotalBeta = calcValueSum(itemTotalPrice);
 				
 				for (int k=0; k<amtTotal.length; k++) {
-					itemTotalPrice[k] = scan.nextInt();
+					itemTotalPriceVal = scan.nextInt();
 				}
 				scan.close();
 				}
