@@ -34,7 +34,7 @@ public class A1Novice {
 				for (int i=0; i<customerAmt.length; i++) {
 					firstName[i] = scan.next();
 					lastName[i] = scan.next();
-				}
+				
 					// set up scanner to find the number of total items utilizing the array made
 	
 				int numitemTotal = scan.nextInt();
@@ -67,21 +67,18 @@ public class A1Novice {
 				// now want to set up getting Complete total for each customer
 				// can use the end of A1Example to get the sum of prices of all items; method type so "static" needed
 				//	set up definition using array spot made in line 27
+			
+					
+					
+		
 				
 				double amtTotalBeta = calcValueSum(itemTotalPrice);
-				
-				// Close Scanner
-				
-				
-				
-				for (int i = 0; i < customerAmt.length; i++) {
+				for (int k = 0; k < customerAmt.length; k++) {
 		            System.out.println(firstName[i].charAt(0) + ". " + lastName[i] + ": " + String.format("%.2f", amtTotalBeta));
-		        }
-			}
-		
-	}	
-				
-
+		        	}
+				}	
+			}	
+	}		
 				// Now to set up printing values
 				// Use CharAt(0) to get the first letter of the string-> period, last name, then colon, total price.	
 				// Used Print part in A1Example as a reference
