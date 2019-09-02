@@ -75,7 +75,7 @@ public class A1Novice {
 		// Use CharAt(0) to get the first letter of the string-> period, last name, then colon, total price.	
 		// Used Print part in A1Example as a reference
 			
-		System.out.println(firstName[i].charAt(0) + "." + lastName[i] + ": " + String.format("%.2f", amtTotalBeta));
+		System.out.println(firstName[i].charAt(0) + ". " + lastName[i] + ": " + String.format("%.2f", amtTotalBeta));
 				
 			}
 		
