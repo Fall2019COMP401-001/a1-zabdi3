@@ -72,11 +72,10 @@ public class A1Novice {
 				
 				double amtTotalBeta = calcValueSum(itemTotalPrice);
 				
-				
 				scan.close();
 				}
 				
-				System.out.println(firstName.length + ". " + lastName + ": " + String.format("%.2f", amtTotal));}
+				System.out.println(firstName + ". " + lastName + ": " + String.format("%.2f", amtTotal));}
 
 				
 				
