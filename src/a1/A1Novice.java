@@ -16,6 +16,7 @@ public class A1Novice {
 		// Now set up array to utilize the input of amount of customers...similar to A1Example
 		
 		int[] customerAmt = new int[amtCustomer];
+		double[] itemTotalPrice = new double[amtCustomer];
 		
 			// set up array for other inputs (F+L names and total price of items purchased)
 			// First and Last names can use String and for total price would use double (real numbers)
@@ -59,8 +60,7 @@ public class A1Novice {
 					
 				// Now want to set up math part for getting total price for each item
 				// Create an array to store the number (in this case a double) then set up calculation
-				
-				double[] itemTotalPrice = new double[numitemTotal];	
+					
 					itemTotalPrice[j] = (singleItemAmt[j] * itemPrice[j]);
 					
 					
@@ -70,13 +70,8 @@ public class A1Novice {
 				
 				
 				
-				for (int k=0; k <amtTotal.length; k++) {
-					itemTotalPrice[j] = scan.nextInt();
-					
-					
-					
-				scan.close();
 				}
+				
 				double amtTotalBeta = calcValueSum(itemTotalPrice);
 				
 				
@@ -84,7 +79,7 @@ public class A1Novice {
 			
 				}
 		
-	}	
+
 				
 
 				// Now to set up printing values
