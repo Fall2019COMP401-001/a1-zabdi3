@@ -25,15 +25,17 @@ public class A1Novice {
 		String[] lastName = new String[amtCustomer];
 		double[] amtTotal = new double[amtCustomer];
 		
+		// Setup the for loop (similar to A1Exp) in order to look for the values put in
+		// Remember setup of inputs... Number->String->String->Number->String->Number
+		
+		for (int i=0; i<customerAmt.length; i++) {
+			firstName[i] = scan.next();
+			lastName[i] = scan.next();
+			
+			
 		
 				
-		
-		
-		
-		
-		
-		
-		
+		}
 		
 	}
 }
