@@ -25,6 +25,10 @@ public class A1Novice {
 		String[] firstName = new String[amtCustomer];
 		String[] lastName = new String[amtCustomer];
 		double[] amtTotal = new double[amtCustomer];
+		int [] totalnumItems = new int[amtCustomer];
+		int [] amtsingleItem = new int[amtCustomer];
+		double [] itemPrice = new double[amtCustomer];
+		
 		
 		// Setup the for loop (similar to A1Exp) in order to look for the values put in
 		// Remember setup of inputs... Number->String->String->Number->String->Number
@@ -33,32 +37,15 @@ public class A1Novice {
 		for (int i=0; i<customerAmt.length; i++) {
 			firstName[i] = scan.next();
 			lastName[i] = scan.next();
-		
-			// set up scanner to find the number of total items utilizing the array made
-			
-		int numitemTotal = scan.nextInt();
-		int [] itemTotalnum = new int [numitemTotal];
-		// now want to make another array in order to save inputs related to the item.
-		// ex: # of total and singular items(integer), price of the item (double)
-			
-		int[] numItem = new int[numitemTotal];
-		int[] singleItemAmt = new int[numitemTotal];;
-		double[] itemPrice = new double[numitemTotal];
-		
-		// With arrays available, can now start the for loop to scan for respective item values...use j.
-		// try to set up math part
-		
-		for (int j=0; j<itemTotalnum.length; j++) {
-			singleItemAmt[j] = scan.nextInt();
-			itemPrice[j] = scan.nextDouble();
-			double sum = 0;
-			sum = (singleItemAmt[j] * itemPrice[j]);
-		
+			totalnumItems[i] = scan.nextInt();
+			amtsingleItem[i] = scan.nextInt();
+			itemPrice[i] = scan.nextDouble();
+					
 		// Now want to set up math part for getting total price for each item
 		// Create an array to store the number (in this case a double) then set up calculation
 		
 			
-			double itemTotalPrice = (singleItemAmt[j] * itemPrice[j]);
+			double itemTotalPrice = (amtsingleItem[i] * itemPrice[i]);
 		
 		// Now close scanner
 		
@@ -68,8 +55,8 @@ public class A1Novice {
 		// Now to set up printing values
 		// Use CharAt(0) to get the first letter of the string-> period, last name, then colon, total price.	
 		// Used Print part in A1Example as a reference
-			
-		System.out.println(firstName[i].charAt(0) + ". " + lastName[i] + ": " + String.format("%.2f", sum));}}    
-	}	
-			}
 		
+	
+		System.out.println(firstName[i].charAt(0) + ". " + lastName[i] + ": " + String.format("%.2f", itemTotalPrice));}}    
+			}
+			
