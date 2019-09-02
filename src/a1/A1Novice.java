@@ -35,7 +35,7 @@ public class A1Novice {
 					lastName[i] = scan.next();
 					
 					// set up scanner to find the number of total items utilizing the array made
-					
+				}
 				int numitemTotal = scan.nextInt();
 				
 				// now want to make another array in order to save inputs related to the item.
@@ -46,6 +46,8 @@ public class A1Novice {
 				String[] itemName = new String[numitemTotal];
 				double[] itemPrice = new double[numitemTotal];
 				
+				
+				
 				// With arrays available, can now start the for loop to scan for respective item values...use j.
 				
 				for (int j=0; j<numItem.length; j++) {
@@ -53,6 +55,8 @@ public class A1Novice {
 					itemName[j] = scan.next();
 					itemPrice[j] = scan.nextDouble();
 				
+				
+					
 				// Now want to set up math part for getting total price for each item
 				// Create an array to store the number (in this case a double) then set up calculation
 				
@@ -63,24 +67,29 @@ public class A1Novice {
 				// now want to set up getting Complete total for each customer
 				// can use the end of A1Example to get the sum of prices of all items; method type so "static" needed
 				//	set up definition using array spot made in line 27
-					
-				double amtTotalBeta = calcValueSum(itemTotalPrice);
-					
-				// Now close scanner
-					
-				scan.close();
 				
+				
+				
+				double amtTotalBeta = calcValueSum(itemTotalPrice);
+				
+				
+				scan.close();
+				}
+				for (int k = 1; k < numitemTotal; k++) {
+					System.out.println(firstName.length + ". " + lastName + ": " + String.format("%.2f", amtTotal));}
+				
+				
+				}
 				
 				// Now to set up printing values
 				// Use CharAt(0) to get the first letter of the string-> period, last name, then colon, total price.	
 				// Used Print part in A1Example as a reference
 					
-				System.out.println(firstName[i].charAt(0) + ". " + lastName[i] + ": " + String.format("%.2f", amtTotalBeta));
-						
-					}
+	
+					
 				
-				}
-			}
+				
+			
 
 			private static double calcValueSum(double[] vals) {
 				/* calcValueSum 
