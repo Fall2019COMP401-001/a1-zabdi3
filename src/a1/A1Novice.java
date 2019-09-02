@@ -73,7 +73,7 @@ public class A1Novice {
 				
 				
 				double amtTotalBeta = calcValueSum(itemTotalPrice);
-				for (int k = 0; k < numItem.length; k++) {
+				for (int k = 0; k <=customerAmt.length; k++) {
 		            System.out.println(firstName[i].charAt(0) + ". " + lastName[i] + ": " + String.format("%.2f", amtTotalBeta));
 		        	
 				}	
