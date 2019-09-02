@@ -75,9 +75,10 @@ public class A1Novice {
 				scan.close();
 				
 				
-		System.out.println(firstName + ". " + lastName + ": " + String.format("%.2f", amtTotalBeta));
-			
-				}
+				for (int i = 0; i < customerAmt.length; i++) {
+		            System.out.println(firstName[i].charAt(0) + ". " + lastName[i] + ": " + String.format("%.2f", amtTotalBeta));
+		        }
+			}
 		
 	}	
 				
