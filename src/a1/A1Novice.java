@@ -69,13 +69,13 @@ public class A1Novice {
 				//	set up definition using array spot made in line 27
 			
 					
-					
+				}
 		
 				
 				double amtTotalBeta = calcValueSum(itemTotalPrice);
 				for (int k = 0; k < customerAmt.length; k++) {
 		            System.out.println(firstName[i].charAt(0) + ". " + lastName[i] + ": " + String.format("%.2f", amtTotalBeta));
-		        	}
+		        	
 				}	
 			}	
 	}		
