@@ -44,7 +44,7 @@ public class A1Novice {
 					
 				int[] numItem = new int[numitemTotal];
 				int[] singleItemAmt = new int[numitemTotal];
-				// String[] itemName = new String[numitemTotal];
+				String[] itemName = new String[numitemTotal];
 				double[] itemPrice = new double[numitemTotal];
 				
 				
@@ -53,7 +53,7 @@ public class A1Novice {
 				
 				for (int j=0; j<numItem.length; j++) {
 					singleItemAmt[j] = scan.nextInt();
-					// itemName[j] = scan.next();
+					itemName[j] = scan.next();
 					itemPrice[j] = scan.nextDouble();
 				
 				
@@ -99,7 +99,7 @@ public class A1Novice {
 				 * Preconditions: Input array must not be null.
 				 */	 
 				
-				double sum = 0;
+				double sum = 0.0;
 			
 				for (int i=0; i<vals.length; i++) {
 					sum += vals[i];
