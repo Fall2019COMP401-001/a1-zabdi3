@@ -48,11 +48,11 @@ public class A1Novice {
 		// With arrays available, can now start the for loop to scan for respective item values...use j.
 		// try to set up math part
 		
-		for (int j=0; j<numItem.length; j++) {
+		for (int j=0; j<itemTotalnum.length; j++) {
 			singleItemAmt[j] = scan.nextInt();
 			itemPrice[j] = scan.nextDouble();
 			double sum = 0;
-			sum += (singleItemAmt[j] * itemPrice[j]);
+			sum = (singleItemAmt[j] * itemPrice[j]);
 		
 		// Now want to set up math part for getting total price for each item
 		// Create an array to store the number (in this case a double) then set up calculation
