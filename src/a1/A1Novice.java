@@ -33,7 +33,7 @@ public class A1Novice {
 		for (int i=0; i<customerAmt.length; i++) {
 			firstName[i] = scan.next();
 			lastName[i] = scan.next();
-			
+		
 			// set up scanner to find the number of total items utilizing the array made
 			
 		int numitemTotal = scan.nextInt();
@@ -65,9 +65,9 @@ public class A1Novice {
 		//	set up definition using array spot made in line 27
 			
 		double amtTotalBeta = calcValueSum(itemTotalPrice);
-			
+		
 		// Now close scanner
-			
+		
 		scan.close();
 		
 		
@@ -75,12 +75,10 @@ public class A1Novice {
 		// Use CharAt(0) to get the first letter of the string-> period, last name, then colon, total price.	
 		// Used Print part in A1Example as a reference
 			
-		System.out.println(firstName[i].charAt(0) + ". " + lastName[i] + ": " + String.format("%.2f", amtTotalBeta));
+		System.out.println(firstName[i].charAt(0) + ". " + lastName[i] + ": " + String.format("%.2f", amtTotalBeta));}}    
 				
 			}
 		
-		}
-	}
 
 	private static double calcValueSum(double[] vals) {
 		/* calcValueSum 
