@@ -37,34 +37,28 @@ public class A1Novice {
 			// set up scanner to find the number of total items utilizing the array made
 			
 		int numitemTotal = scan.nextInt();
-		
+		int [] itemTotalnum = new int [numitemTotal];
 		// now want to make another array in order to save inputs related to the item.
-		// ex: # of total and singular items(integer), name of the item (string), price of the item (double)
+		// ex: # of total and singular items(integer), price of the item (double)
 			
 		int[] numItem = new int[numitemTotal];
-		int[] singleItemAmt = new int[numitemTotal];
-		String[] itemName = new String[numitemTotal];
+		int[] singleItemAmt = new int[numitemTotal];;
 		double[] itemPrice = new double[numitemTotal];
 		
 		// With arrays available, can now start the for loop to scan for respective item values...use j.
+		// try to set up math part
 		
 		for (int j=0; j<numItem.length; j++) {
 			singleItemAmt[j] = scan.nextInt();
-			itemName[j] = scan.next();
 			itemPrice[j] = scan.nextDouble();
+			double sum = 0;
+			sum += (singleItemAmt[j] * itemPrice[j]);
 		
 		// Now want to set up math part for getting total price for each item
 		// Create an array to store the number (in this case a double) then set up calculation
 		
-		double[] itemTotalPrice = new double[numitemTotal];	
-			itemTotalPrice[j] = (singleItemAmt[j] * itemPrice[j]);
-		
 			
-		// now want to set up getting Complete total for each customer
-		// can use the end of A1Example to get the sum of prices of all items; method type so "static" needed
-		//	set up definition using array spot made in line 27
-			
-		double amtTotalBeta = calcValueSum(itemTotalPrice);
+			double itemTotalPrice = (singleItemAmt[j] * itemPrice[j]);
 		
 		// Now close scanner
 		
@@ -75,27 +69,7 @@ public class A1Novice {
 		// Use CharAt(0) to get the first letter of the string-> period, last name, then colon, total price.	
 		// Used Print part in A1Example as a reference
 			
-		System.out.println(firstName[i].charAt(0) + ". " + lastName[i] + ": " + String.format("%.2f", amtTotalBeta));}}    
+		System.out.println(firstName[i].charAt(0) + ". " + lastName[i] + ": " + String.format("%.2f", sum));}}    
 				
 			}
 		
-
-	private static double calcValueSum(double[] vals) {
-		/* calcValueSum 
-		 * Calculates the sum on an array of doubles (prices in this case)
-		 *
-		 * Input: array of integers vals
-		 * Output: integer sum of values in vals
-		 * 
-		 * Preconditions: Input array must not be null.
-		 */	 
-		
-		double sum = 0;
-	
-		for (int i=0; i<vals.length; i++) {
-			sum += vals[i];
-		}	
-		return sum;
-		
-	}
-}
