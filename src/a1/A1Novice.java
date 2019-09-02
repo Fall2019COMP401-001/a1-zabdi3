@@ -70,7 +70,7 @@ public class A1Novice {
 			
 					
 				}
-		
+				scan.close();
 				
 				double amtTotalBeta = calcValueSum(itemTotalPrice);
 				for (int k = 0; k < customerAmt.length; k++) {
