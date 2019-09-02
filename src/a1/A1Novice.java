@@ -60,26 +60,26 @@ public class A1Novice {
 					
 				// Now want to set up math part for getting total price for each item
 				// Create an array to store the number (in this case a double) then set up calculation
-					
-					itemTotalPrice[j] = (singleItemAmt[j] * itemPrice[j]);
+				//double[] itemTotalPrice = new double[numitemTotal]	
+					itemTotalPrice[j] += (singleItemAmt[j] * itemPrice[j]);
 					
 					
 				// now want to set up getting Complete total for each customer
 				// can use the end of A1Example to get the sum of prices of all items; method type so "static" needed
 				//	set up definition using array spot made in line 27
 				
-				
-				
-				}
-				
 				double amtTotalBeta = calcValueSum(itemTotalPrice);
+				
+				// Close Scanner
+				
+				scan.close();
 				
 				
 		System.out.println(firstName + ". " + lastName + ": " + String.format("%.2f", amtTotalBeta));
 			
 				}
 		
-
+	}	
 				
 
 				// Now to set up printing values
