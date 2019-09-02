@@ -73,19 +73,18 @@ public class A1Novice {
 				for (int k=0; k <amtTotal.length; k++) {
 					itemTotalPrice[j] = scan.nextInt();
 					
-					double amtTotalBeta = calcValueSum(itemTotalPrice);
 					
-				}
-				
+					
 				scan.close();
+				}
+				double amtTotalBeta = calcValueSum(itemTotalPrice);
 				
-			}
 				
-				
-		System.out.println(firstName + ". " + lastName + ": " + String.format("%.2f", amtTotal));
-		}
+		System.out.println(firstName + ". " + lastName + ": " + String.format("%.2f", amtTotalBeta));
+			
+				}
 		
-				
+	}	
 				
 
 				// Now to set up printing values
