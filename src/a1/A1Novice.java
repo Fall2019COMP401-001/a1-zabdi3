@@ -46,7 +46,7 @@ public class A1Novice {
 		String[] itemName = new String[numitemTotal];
 		double[] itemPrice = new double[numitemTotal];
 		
-		// With arrays available, can now start the for loop to scan for respective values...use j.
+		// With arrays available, can now start the for loop to scan for respective item values...use j.
 		
 		for (int j=0; j<numItem.length; j++) {
 			singleItemAmt[j] = scan.nextInt();
@@ -59,20 +59,45 @@ public class A1Novice {
 		double[] itemTotalPrice = new double[numitemTotal];	
 			itemTotalPrice[j] = singleItemAmt[j] * itemPrice[j];
 		
-		// Close scanner
-			
-			scan.close();
 			
 		// now want to set up getting Complete total for each customer
 		// can use the end of A1Example to get the sum of prices of all items; method type so "static" needed
-		//	
+		//	set up definition using array spot made in line 27
 			
+		double amtTotalBeta = calcValueSum(itemTotalPrice);
+			
+		// Now close scanner
+			
+		scan.close();
+		
+		
 		// Now to set up printing values
 		// Use CharAt(0) to get the first letter of the string-> period, last name, then colon, total price.	
 		// Used Print part in A1Example as a reference
-		
+			
+		System.out.println(firstName[i].charAt(0) + "." + lastName[i] + ":" + String.format("%.2f", amtTotalBeta));
+				
 			}
 		
 		}
+	}
+
+	private static double calcValueSum(double[] vals) {
+		/* calcValueSum 
+		 * Calculates the sum on an array of doubles (prices in this case)
+		 *
+		 * Input: array of integers vals
+		 * Output: integer sum of values in vals
+		 * 
+		 * Preconditions: Input array must not be null.
+		 */	 
+		
+		double sum = 0;
+	
+		for (int i=0; i<vals.length; i++) {
+			sum += vals[i];
+		}	
+		return sum;
+		
 	}
 }
