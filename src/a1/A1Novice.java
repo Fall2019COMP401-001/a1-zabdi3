@@ -75,12 +75,12 @@ public class A1Novice {
 				
 				scan.close();
 				}
-				for (int k = 1; k < numitemTotal; k++) {
-					System.out.println(firstName.length + ". " + lastName + ": " + String.format("%.2f", amtTotal));}
+				
+				System.out.println(firstName.length + ". " + lastName + ": " + String.format("%.2f", amtTotal));}
+
 				
 				
-				}
-				
+
 				// Now to set up printing values
 				// Use CharAt(0) to get the first letter of the string-> period, last name, then colon, total price.	
 				// Used Print part in A1Example as a reference
