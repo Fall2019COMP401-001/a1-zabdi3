@@ -44,19 +44,42 @@ public class A1Novice {
 		// Now want to set up math part for getting total price for each item
 		// Create an array to store the number (in this case a double) then set up calculation
 		
-			
 			double itemTotalPrice = (amtsingleItem[i] * itemPrice[i]);
 		
 		// Now close scanner
 		
 		scan.close();
 		
+		int sum = calculateValueSum(customerAmt);
 		
 		// Now to set up printing values
 		// Use CharAt(0) to get the first letter of the string-> period, last name, then colon, total price.	
 		// Used Print part in A1Example as a reference
 		
 	
-		System.out.println(firstName[i].charAt(0) + ". " + lastName[i] + ": " + String.format("%.2f", itemTotalPrice));}}    
-			}
+	System.out.println(firstName[i].charAt(0) + ". " + lastName[i] + ": " + String.format("%.2f", sum));}}
+
+	private static int calculateValueSum(int[] customerAmt) {
+		int sum = 0;
+		
+		for (int i=0; i<customerAmt.length; i++) {
+			sum += customerAmt[i];
+		}
+		
+		return sum;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 			
