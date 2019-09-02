@@ -33,7 +33,7 @@ public class A1Novice {
 				for (int i=0; i<customerAmt.length; i++) {
 					firstName[i] = scan.next();
 					lastName[i] = scan.next();
-					
+				}
 					// set up scanner to find the number of total items utilizing the array made
 				
 				int numitemTotal = scan.nextInt();
@@ -72,13 +72,14 @@ public class A1Novice {
 				double amtTotalBeta = calcValueSum(itemTotalPrice);
 				
 				for (int k=0; k<amtTotal.length; k++) {
-					itemTotalPrice[i] = scan.nextInt();
+					itemTotalPrice[k] = scan.nextInt();
 				}
 				scan.close();
 				}
 				
-		System.out.println(firstName + ". " + lastName + ": " + String.format("%.2f", amtTotal));}
-	}	
+		System.out.println(firstName + ". " + lastName + ": " + String.format("%.2f", amtTotal));
+		}
+		
 				
 				
 
