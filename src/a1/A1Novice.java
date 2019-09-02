@@ -72,7 +72,6 @@ public class A1Novice {
 				
 				// Close Scanner
 				
-				scan.close();
 				
 				
 				for (int i = 0; i < customerAmt.length; i++) {
