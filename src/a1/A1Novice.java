@@ -70,6 +70,6 @@ public class A1Novice {
 		// Used Print part in A1Example as a reference
 			
 		System.out.println(firstName[i].charAt(0) + ". " + lastName[i] + ": " + String.format("%.2f", sum));}}    
-				
+	}	
 			}
 		
