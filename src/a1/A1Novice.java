@@ -39,12 +39,16 @@ public class A1Novice {
 	
 				int numitemTotal = scan.nextInt();
 				
+				// Could this work?... 
+				
+				// double itemPrice = scan.nextDouble();
+				
 				// now want to make another array in order to save inputs related to the item.
 				// ex: # of total and singular items(integer), name of the item (string), price of the item (double)
 					
 				int[] numItem = new int[numitemTotal];
 				int[] singleItemAmt = new int[numitemTotal];
-				String[] itemName = new String[numitemTotal];
+				// don't need name of item -> String[] itemName = new String[numitemTotal];
 				double[] itemPrice = new double[numitemTotal];
 				
 				
@@ -61,6 +65,7 @@ public class A1Novice {
 				// Now want to set up math part for getting total price for each item
 				// Create an array to store the number (in this case a double) then set up calculation
 				//double[] itemTotalPrice = new double[numitemTotal]	
+					
 					itemTotalPrice[j] += (singleItemAmt[j] * itemPrice[j]);
 					
 					
@@ -73,7 +78,7 @@ public class A1Novice {
 				
 				
 				double amtTotalBeta = calcValueSum(itemTotalPrice);
-				for (int k = 0; k <=customerAmt.length; k++) {
+				for (int k = 0; k <=amtCustomer; k++) {
 		            System.out.println(firstName[i].charAt(0) + ". " + lastName[i] + ": " + String.format("%.2f", amtTotalBeta));
 		        	
 				}	
