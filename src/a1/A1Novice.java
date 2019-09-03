@@ -57,7 +57,6 @@ public class A1Novice {
 					scan.next();
 					itemPrice[j] = scan.nextDouble();
 				
-				scan.close();
 					
 				// Now want to set up math part for getting total price for each item
 				// Create an array to store the number (in this case a double) then set up calculation
